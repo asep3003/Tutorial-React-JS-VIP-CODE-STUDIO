@@ -14,7 +14,7 @@ const ProductsPage = () => {
         <CardProduct.Footer price="Rp 1.000.000" />
       </CardProduct>
     </div>
-  )
+  );
 }
 
 export default ProductsPage;
