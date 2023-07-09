@@ -7,7 +7,6 @@ import { getUsername } from "../services/auth.service";
 import { useLogin } from "../hooks/useLogin";
 
 const ProductsPage = () => {
-
   const [cart, setCart] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [products, setProducts] = useState([]);
@@ -78,7 +77,7 @@ const ProductsPage = () => {
           {products.length > 0 && 
             products.map((product) => (
               <CardProduct key={product.id}>
-                <CardProduct.Header image={product.image} />
+                <CardProduct.Header image={product.image} id={product.id} />
                 <CardProduct.Body title={product.title}>{product.description}</CardProduct.Body>
                 <CardProduct.Footer price={product.price} id={product.id} handleAddToCart={handleAddToCart} />
               </CardProduct>
