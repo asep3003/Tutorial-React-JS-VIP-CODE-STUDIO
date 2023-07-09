@@ -19,11 +19,11 @@ const Header = (props) => {
 }
 
 const Body = (props) => {
-  const { children, name } = props;
+  const { children, title } = props;
   return (
     <div className="px-5 pb-5 h-full">
       <a href="">
-        <h5 className="text-xl font-semibold tracking-tight text-white">{name}</h5>
+        <h5 className="text-xl font-semibold tracking-tight text-white">{title}</h5>
         <p className="textm text-white">{children}</p>
       </a>
     </div>
